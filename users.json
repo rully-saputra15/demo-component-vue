@@ -1,0 +1,96 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "rully",
+      "hobby": "ngoding"
+    },
+    {
+      "id": 2,
+      "username": "saputra",
+      "hobby": "vue"
+    },
+    {
+      "username": "asd",
+      "password": "asdasd",
+      "id": 3
+    },
+    {
+      "username": "adads",
+      "password": "asdasd",
+      "id": 4
+    },
+    {
+      "username": "asd",
+      "password": "ads",
+      "id": 5
+    },
+    {
+      "username": "adsasd",
+      "password": "asdasd",
+      "id": 6
+    },
+    {
+      "username": "rully",
+      "password": "rully",
+      "id": 7
+    },
+    {
+      "username": "rully",
+      "password": "rully",
+      "id": 8
+    },
+    {
+      "username": "rully",
+      "password": "asd",
+      "id": 9
+    },
+    {
+      "username": "rully",
+      "password": "rully",
+      "id": 10
+    },
+    {
+      "username": "rully",
+      "password": "rully",
+      "id": 11
+    },
+    {
+      "username": "rully",
+      "password": "rully",
+      "id": 12
+    },
+    {
+      "username": "asdf",
+      "password": "asdf",
+      "id": 13
+    },
+    {
+      "username": "asdf",
+      "password": "asdf",
+      "id": 14
+    }
+  ],
+  "movies": [
+    {
+      "id": 1,
+      "title": "Her (2013)",
+      "imgSrc": "https://play-lh.googleusercontent.com/Adxxg-PYJJNyoylouqaKBwXcK9-DHAga_LtUV8nGXpPIXGgZk9DKeK7okISBnEHjxGhH"
+    },
+    {
+      "id": 2,
+      "title": "Joker (2019)",
+      "imgSrc": "https://m.media-amazon.com/images/M/MV5BNGVjNWI4ZGUtNzE0MS00YTJmLWE0ZDctN2ZiYTk2YmI3NTYyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg"
+    },
+    {
+      "id": 3,
+      "title": "The Platform (2019)",
+      "imgSrc": "https://m.media-amazon.com/images/M/MV5BOTMyYTIyM2MtNjQ2ZC00MWFkLThhYjQtMjhjMGZiMjgwYjM2XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Guardians of the Galaxy Vol. 3 (2023)",
+      "imgSrc": "https://lumiere-a.akamaihd.net/v1/images/id-guardiansofthegalaxy-vol3-payoffposter_6ba5c28b.jpeg?region=0%2C0%2C600%2C900"
+    }
+  ]
+}

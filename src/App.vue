@@ -1,29 +1,28 @@
 <script>
-import LoginPage from "./pages/LoginPage.vue";
-import MovieListPage from "./pages/MovieListPage.vue";
-
+import LoginPage from "./views/LoginPage.vue";
+import MovieListPage from "./views/MovieListPage.vue";
 import axios from "axios";
+
 export default {
   data() {
     return {
-      movies: [],
+      movieList: [],
       currentPage: "login",
     };
   },
   components: { LoginPage, MovieListPage },
-
   created() {
     if (localStorage.getItem("access_token")) {
       this.currentPage = "movieList";
-      this.handleFetchMovies();
     } else {
       this.currentPage = "login";
     }
   },
-
   methods: {
     async handleLogin(username, password) {
       try {
+        console.log("ini dari app", username, password);
+
         const { data } = await axios({
           method: "POST",
           url: "http://localhost:3000/users",
@@ -32,43 +31,38 @@ export default {
             password: password,
           },
         });
-        localStorage.setItem("access_token", "blabla");
+
+        console.log(data);
+
+        localStorage.setItem("access_token", "asdfasdf");
+
         this.currentPage = "movieList";
-        this.handleFetchMovies();
       } catch (err) {
         console.log(err);
       }
     },
-
     async handleFetchMovies() {
       try {
         const { data } = await axios({
           method: "GET",
           url: "http://localhost:3000/movies",
         });
-        this.movies = data;
+        console.log(data);
+        this.movieList = data;
       } catch (err) {
         console.log(err);
       }
-    },
-
-    handleViewDetail(title) {
-      alert(`Clicked ${title}`);
     },
   },
 };
 </script>
 
 <template>
-  <LoginPage
-    v-if="currentPage === 'login'"
-    title="Login"
-    @loginHandler="handleLogin"
-  />
+  <LoginPage v-if="currentPage === 'login'" @handleLogin="handleLogin" />
   <MovieListPage
     v-else-if="currentPage === 'movieList'"
-    @handleViewDetail="handleViewDetail"
-    :movies="movies"
+    :movieListDariApp="movieList"
+    @handleFetchMoviesDariApp="handleFetchMovies"
   />
 </template>
 

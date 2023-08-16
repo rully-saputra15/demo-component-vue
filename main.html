@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app">
+        <div class="flex flex-col items-center space-y-2">
+            <span class="text-lg font-bold">Login</span>
+            <form
+              class="flex flex-col items-center space-y-2"
+            >
+              <input
+                class="px-3 py-2 border border-blue-300 rounded-lg"
+                placeholder="username"
+              />
+              <input
+                class="px-3 py-2 border border-blue-300 rounded-lg"
+                placeholder="password"
+              />
+              <button
+                class="px-3 py-2 bg-gray-200 border rounded-lg border-blue-500 drop-shadow-lg"
+                type="submit"
+              >
+                Submit
+              </button>
+            </form>
+            <div class="flex flex-col items-center space-y-2">
+                <span class="text-lg font-black">Movie List</span>
+                <div class="flex flex-row space-x-3 flex-wrap">
+                    <div class="flex flex-col border border-blue-300 rounded-lg p-4 w-44">
+                        <img src="https://play-lh.googleusercontent.com/Adxxg-PYJJNyoylouqaKBwXcK9-DHAga_LtUV8nGXpPIXGgZk9DKeK7okISBnEHjxGhH" />
+                        <span class="text-center font-light">Her</span>
+                    </div>
+                    <div class="flex flex-col border border-blue-300 rounded-lg p-4 w-44">
+                        <img src="https://play-lh.googleusercontent.com/Adxxg-PYJJNyoylouqaKBwXcK9-DHAga_LtUV8nGXpPIXGgZk9DKeK7okISBnEHjxGhH" />
+                        <span class="text-center font-light">Her</span>
+                    </div>
+                    <div class="flex flex-col border border-blue-300 rounded-lg p-4 w-44">
+                        <img src="https://play-lh.googleusercontent.com/Adxxg-PYJJNyoylouqaKBwXcK9-DHAga_LtUV8nGXpPIXGgZk9DKeK7okISBnEHjxGhH" />
+                        <span class="text-center font-light">Her</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

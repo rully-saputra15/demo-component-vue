@@ -1,21 +1,17 @@
 <script>
 export default {
   name: "LoginPage",
-  emits: ["loginHandler"],
-  props: ["title"],
+  emits: ["handleLogin"],
   data() {
     return {
-      login: {
-        username: "",
-        password: "",
-      },
+      username: "",
+      password: "",
     };
   },
   methods: {
     handleSubmit() {
-      console.log("submit");
-
-      this.$emit("loginHandler", this.login.username, this.login.password);
+      console.log(this.username, this.password);
+      this.$emit("handleLogin", this.username, this.password);
     },
   },
 };
@@ -30,13 +26,13 @@ export default {
     >
       <input
         class="px-3 py-2 border border-blue-300 rounded-lg"
-        v-model="login.username"
         placeholder="username"
+        v-model="username"
       />
       <input
         class="px-3 py-2 border border-blue-300 rounded-lg"
-        v-model="login.password"
         placeholder="password"
+        v-model="password"
       />
       <button
         class="px-3 py-2 bg-gray-200 border rounded-lg border-blue-500 drop-shadow-lg"
